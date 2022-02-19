@@ -34,6 +34,7 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 import AccountabilityPartner from "layouts/dashboard/components/AccountabilityPartner";
+import Quote from "layouts/dashboard/components/Quote";
 
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
@@ -42,6 +43,11 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <MDBox py={3}>
+        <Grid item xs={12} md={12} lg={12}>
+          <MDBox mb={1.5}>
+            <Quote />
+          </MDBox>
+        </Grid>
         <Grid item xs={12} md={6} lg={6}>
           <MDBox mb={1.5}>
             <AccountabilityPartner />
