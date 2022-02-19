@@ -45,10 +45,15 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <MDBox py={3}>
-        <Grid item xs={12} md={12} lg={6}>
-          <MDBox mb={1.5}>
-            <AccountabilityPartner />
-          </MDBox>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6} lg={6}>
+            <MDBox mb={1.5}>
+              <AccountabilityPartner />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <MDBox mb={1.5}>Checkbox</MDBox>
+          </Grid>
         </Grid>
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
