@@ -10,9 +10,15 @@ import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
 export default function AccountabilityPartner() {
   return (
-    <Card>
+    <Card sx={{ textAlign: "center", m: 1 }}>
       <CardActionArea>
-        <CardMedia component="img" height="140" image={bgImage} alt="Partner Picture" />
+        <CardMedia
+          sx={{ mx: "auto" }}
+          component="img"
+          height="140"
+          image={bgImage}
+          alt="Partner Picture"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Albert Karlo

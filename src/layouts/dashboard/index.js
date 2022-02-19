@@ -35,9 +35,6 @@ import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 import AccountabilityPartner from "layouts/dashboard/components/AccountabilityPartner";
 
-// Images
-// import bgImage from "assets/images/bg-sign-in-basic.jpeg";
-
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
 
@@ -45,15 +42,10 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <MDBox py={3}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6} lg={6}>
-            <MDBox mb={1.5}>
-              <AccountabilityPartner />
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={6}>
-            <MDBox mb={1.5}>Checkbox</MDBox>
-          </Grid>
+        <Grid item xs={12} md={6} lg={6}>
+          <MDBox mb={1.5}>
+            <AccountabilityPartner />
+          </MDBox>
         </Grid>
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
