@@ -33,7 +33,7 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
-import AccountabilityPartner from "layouts/dashboard/components/AccountabilityPartner";
+import Doctors from "layouts/dashboard/components/Doctors";
 import Quote from "layouts/dashboard/components/Quote";
 
 function Dashboard() {
@@ -50,7 +50,7 @@ function Dashboard() {
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
           <MDBox mb={1.5}>
-            <AccountabilityPartner />
+            <Doctors />
           </MDBox>
         </Grid>
         <MDBox mt={4.5}>
