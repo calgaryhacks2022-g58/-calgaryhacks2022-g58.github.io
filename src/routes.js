@@ -37,7 +37,7 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
+import Chat from "layouts/chat";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
@@ -57,11 +57,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
-    icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
-    component: <Tables />,
+    name: "Chat",
+    key: "chat",
+    icon: <Icon fontSize="small">chat</Icon>,
+    route: "/chat",
+    component: <Chat />,
   },
   {
     type: "collapse",
