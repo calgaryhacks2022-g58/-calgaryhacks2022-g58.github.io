@@ -11,26 +11,30 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
+// Material Dashboard 2 React components
+// import MDBox from "components/MDBox";
+// import MDTypography from "components/MDTypography";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Psychologist: Albert Karlo",
+    label: "Albert Karlo",
     imgPath:
       "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
-    label: "Psychologist: Justin Choi",
+    label: "Justin Choi",
     imgPath:
       "https://images.pexels.com/photos/2182979/pexels-photo-2182979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
-    label: "Psychologist: Bali Indonesia",
+    label: "Bali Indonesia",
     imgPath:
       "https://media.istockphoto.com/photos/we-offer-our-patients-premium-healthcare-here-picture-id638647058?k=20&m=638647058&s=612x612&w=0&h=aRF56ZIBXBL1wN45ZRaHkhmjJjIahkmXTYki7wQteJQ=",
   },
   {
-    label: "Psychologist: Goč Serbia",
+    label: "Goč Serbia",
     imgPath:
       "https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=",
   },
