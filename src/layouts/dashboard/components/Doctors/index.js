@@ -23,7 +23,7 @@ const images = [
   },
   {
     label: "Justin Choi",
-    Appointment: "No upcoming appointments",
+    Appointment: "No upcoming appointments at this time",
     imgPath:
       "https://images.pexels.com/photos/2182979/pexels-photo-2182979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
@@ -35,7 +35,7 @@ const images = [
   },
   {
     label: "Goč Serbia",
-    Appointment: "No upcoming appointments",
+    Appointment: "No upcoming appointments at this time",
     imgPath:
       "https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=",
   },
@@ -100,7 +100,7 @@ export default function Doctors() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MDTypography sx={{ m: "10px", mx: "auto" }} variant="h5">
+      <MDTypography sx={{ m: "10px", mx: "auto" }} variant="h6">
         {images[activeStep].Appointment}
       </MDTypography>
       <MobileStepper
