@@ -344,24 +344,22 @@ function Questionnaire() {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <a href="/dashboard">
-              <Button
-                style={{
-                  textTransform: "none",
-                  maxWidth: "650px",
-                  maxHeight: "50px",
-                  minWidth: "650px",
-                  minHeight: "50px",
-                  color: "white",
-                  backgroundColor: "#17b574",
-                  fontSize: "20px",
-                }}
-                variant="contained"
-                onClick={handleChange}
-              >
-                Not at all
-              </Button>
-            </a>
+            <Button
+              style={{
+                textTransform: "none",
+                maxWidth: "650px",
+                maxHeight: "50px",
+                minWidth: "650px",
+                minHeight: "50px",
+                color: "white",
+                backgroundColor: "#17b574",
+                fontSize: "20px",
+              }}
+              variant="contained"
+              onClick={handleChange}
+            >
+              Not at all
+            </Button>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
             <Button
@@ -785,76 +783,84 @@ function Questionnaire() {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Button
-              style={{
-                textTransform: "none",
-                maxWidth: "650px",
-                maxHeight: "50px",
-                minWidth: "650px",
-                minHeight: "50px",
-                color: "white",
-                backgroundColor: "#17b574",
-                fontSize: "20px",
-              }}
-              variant="contained"
-              onClick={handleLastPage}
-            >
-              Not at all
-            </Button>
+            <a href="/dashboard">
+              <Button
+                style={{
+                  textTransform: "none",
+                  maxWidth: "650px",
+                  maxHeight: "50px",
+                  minWidth: "650px",
+                  minHeight: "50px",
+                  color: "white",
+                  backgroundColor: "#17b574",
+                  fontSize: "20px",
+                }}
+                variant="contained"
+                onClick={handleLastPage}
+              >
+                Not at all
+              </Button>
+            </a>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Button
-              style={{
-                textTransform: "none",
-                maxWidth: "650px",
-                maxHeight: "50px",
-                minWidth: "650px",
-                minHeight: "50px",
-                color: "white",
-                backgroundColor: "#17b574",
-                fontSize: "20px",
-              }}
-              variant="contained"
-              onClick={handleLastPage}
-            >
-              Several days
-            </Button>
+            <a href="/dashboard">
+              <Button
+                style={{
+                  textTransform: "none",
+                  maxWidth: "650px",
+                  maxHeight: "50px",
+                  minWidth: "650px",
+                  minHeight: "50px",
+                  color: "white",
+                  backgroundColor: "#17b574",
+                  fontSize: "20px",
+                }}
+                variant="contained"
+                onClick={handleLastPage}
+              >
+                Several days
+              </Button>
+            </a>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Button
-              style={{
-                textTransform: "none",
-                maxWidth: "650px",
-                maxHeight: "50px",
-                minWidth: "650px",
-                minHeight: "50px",
-                color: "white",
-                backgroundColor: "#17b574",
-                fontSize: "20px",
-              }}
-              variant="contained"
-              onClick={handleLastPage}
-            >
-              More than half the days
-            </Button>
+            <a href="/dashboard">
+              <Button
+                style={{
+                  textTransform: "none",
+                  maxWidth: "650px",
+                  maxHeight: "50px",
+                  minWidth: "650px",
+                  minHeight: "50px",
+                  color: "white",
+                  backgroundColor: "#17b574",
+                  fontSize: "20px",
+                }}
+                variant="contained"
+                onClick={handleLastPage}
+              >
+                More than half the days
+              </Button>
+            </a>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Button
-              style={{
-                textTransform: "none",
-                maxWidth: "650px",
-                maxHeight: "50px",
-                minWidth: "650px",
-                minHeight: "50px",
-                color: "white",
-                backgroundColor: "#17b574",
-                fontSize: "20px",
-              }}
-              variant="contained"
-              onClick={handleLastPage}
-            >
-              Nearly every day
-            </Button>
+            <a href="/dashboard">
+              <Button
+                style={{
+                  textTransform: "none",
+                  maxWidth: "650px",
+                  maxHeight: "50px",
+                  minWidth: "650px",
+                  minHeight: "50px",
+                  color: "white",
+                  backgroundColor: "#17b574",
+                  fontSize: "20px",
+                }}
+                variant="contained"
+                onClick={handleLastPage}
+              >
+                Nearly every day
+              </Button>
+            </a>
           </Grid>
         </Grid>
       </Box>

@@ -40,7 +40,7 @@ import Dashboard from "layouts/dashboard";
 import Chat from "layouts/chat";
 import Profile from "layouts/profile";
 import Landing from "layouts/landingpage";
-// import Questionnaire from "layouts/questionnaire";
+import Questionnaire from "layouts/questionnaire";
 import QuestionnaireGrid from "layouts/questionnairegrid";
 
 // @mui icons
@@ -81,6 +81,7 @@ const routes = [
     type: "collapse",
     key: "questionnaire",
     route: "/questionnaire",
+    component: <Questionnaire />,
   },
   {
     type: "collapse",
