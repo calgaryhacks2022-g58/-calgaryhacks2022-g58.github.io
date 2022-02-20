@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-fragments */
 import * as React from "react";
 import {
@@ -5,7 +6,6 @@ import {
   DialogContent,
   DialogTitle,
   Divider,
-  // Fab,
   Grid,
   IconButton,
   List,
@@ -14,11 +14,15 @@ import {
   TextField,
 } from "@mui/material";
 import { Chat, Send } from "@mui/icons-material";
-import { chat } from "./data/testData";
+import moment from "moment";
+import { db } from "utils/firestore";
+import { arrayUnion, updateDoc, doc, Timestamp } from "firebase/firestore";
 
-// eslint-disable-next-line react/prop-types
-export default function ChatDialog({ id }) {
+export default function ChatDialog({ chatId, chatMessages }) {
   const [open, setOpen] = React.useState(false);
+  const [msgInput, setMsgInput] = React.useState("");
+
+  const chatRef = doc(db, "Chat", `${chatId}`);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -28,8 +32,22 @@ export default function ChatDialog({ id }) {
     setOpen(false);
   };
 
-  const messages = chat[id].messages.map((msg, i) => {
-    const align = chat[id].members[msg.sender] === "Bob" ? "right" : "left";
+  const handleSendMsg = async () => {
+    await updateDoc(chatRef, {
+      messages: arrayUnion({
+        sender: 1,
+        content: msgInput,
+        timeSent: Timestamp.now(),
+      }),
+    });
+    setMsgInput("");
+  };
+
+  const messages = chatMessages.map((msg, i) => {
+    const align = msg.sender === 1 ? "right" : "left";
+    const timeSent = msg.timeSent.toDate();
+    const mom = moment(timeSent);
+
     return (
       // eslint-disable-next-line react/no-array-index-key
       <ListItem key={`msg${i}`}>
@@ -38,7 +56,7 @@ export default function ChatDialog({ id }) {
             <ListItemText align={align} primary={msg.content} />
           </Grid>
           <Grid item xs={12}>
-            <ListItemText align={align} secondary={msg.timeSent} />
+            <ListItemText align={align} secondary={mom.format("LT")} />
           </Grid>
         </Grid>
       </ListItem>
@@ -57,10 +75,16 @@ export default function ChatDialog({ id }) {
           <Divider />
           <Grid container>
             <Grid item xs={10}>
-              <TextField id="outlined-basic-email" label="Type Something" fullWidth />
+              <TextField
+                id="outlined-basic-email"
+                label="Type Something"
+                fullWidth
+                value={msgInput}
+                onChange={(e) => setMsgInput(e.target.value)}
+              />
             </Grid>
             <Grid item xs={2} align="center">
-              <IconButton>
+              <IconButton onClick={handleSendMsg}>
                 <Send />
               </IconButton>
             </Grid>

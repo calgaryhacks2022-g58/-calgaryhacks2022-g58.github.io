@@ -1,12 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { Card } from "@mui/material";
 import MDBox from "components/MDBox";
 import * as React from "react";
 import data from "layouts/dashboard/components/AccountabilityChecklist/data";
 import DataTable from "examples/Tables/DataTable";
 import MDTypography from "components/MDTypography";
+import { db } from "utils/firestore";
+import { collection, orderBy, query } from "firebase/firestore";
+import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function AccountabilityChecklist() {
-  const { columns, rows } = data();
+  const messageRef = collection(db, "Chat");
+  const queryMsg = query(messageRef);
+  const [messages] = useCollectionData(queryMsg);
+
+  const { columns, rows } = data(messages);
 
   return (
     <Card>
