@@ -30,10 +30,8 @@ function Content() {
                 <div className="features-icons-icon d-flex  icon-bra-ails">
                   <i className="icon-screen-desktop m-auto text-primary icon-ails" />
                 </div>
-                <h5>Lorem Tag</h5>
-                <p className="lead mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <h5>Online</h5>
+                <p className="lead mb-0">Access medical care from the comfort of your own home.</p>
               </div>
             </div>
             <div className="col-lg-4">
@@ -41,10 +39,8 @@ function Content() {
                 <div className="features-icons-icon d-flex  icon-bra-ails">
                   <i className="icon-layers m-auto text-primary icon-ails" />
                 </div>
-                <h5>Morem Tag</h5>
-                <p className="lead mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <h5>Documented</h5>
+                <p className="lead mb-0">Keep track of your records and prescribed treatments</p>
               </div>
             </div>
             <div className="col-lg-4">
@@ -52,10 +48,8 @@ function Content() {
                 <div className="features-icons-icon d-flex  icon-bra-ails">
                   <i className="icon-check m-auto text-primary icon-ails" />
                 </div>
-                <h5>Oorem Tag</h5>
-                <p className="lead mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <h5>Secure</h5>
+                <p className="lead mb-0">Health Fluency securely stores all data encrypted</p>
               </div>
             </div>
           </div>

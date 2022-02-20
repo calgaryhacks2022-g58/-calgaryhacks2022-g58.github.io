@@ -46,7 +46,7 @@ function QuestionnaireGrid() {
                         <CardMedia
                           component="img"
                           height="180"
-                          image="/images/grid_images/undraw_connection_re_lcud.svg"
+                          image="/images/grid_images/undraw_medicine_b-1-ol.svg"
                           alt="match"
                         />
                         <Typography gutterBottom variant="h4" component="div">
@@ -68,7 +68,7 @@ function QuestionnaireGrid() {
                         <CardMedia
                           component="img"
                           height="180"
-                          image="/images/grid_images/undraw_winners_re_wr1l.svg"
+                          image="/images/grid_images/undraw_connection_re_lcud.svg"
                           alt="contact"
                         />
                         <Typography gutterBottom variant="h4" component="div">
@@ -142,7 +142,7 @@ function QuestionnaireGrid() {
                   <CardMedia
                     component="img"
                     height="180"
-                    image="/images/grid_images/anxiety.jpeg"
+                    image="/images/grid_images/anxiety.jpg"
                     alt="anxiety"
                   />
                   <CardContent>
