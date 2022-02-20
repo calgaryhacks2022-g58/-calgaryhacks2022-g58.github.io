@@ -38,42 +38,15 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
 import Chat from "layouts/chat";
-import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
-import SignIn from "layouts/authentication/sign-in";
-import SignUp from "layouts/authentication/sign-up";
 import Landing from "layouts/landingpage";
-import Questionnaire from "layouts/questionnaire";
+// import Questionnaire from "layouts/questionnaire";
 import QuestionnaireGrid from "layouts/questionnairegrid";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
 
 const routes = [
-  {
-    type: "collapse",
-    name: "Home",
-    key: "home",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/home",
-    component: <Landing />,
-  },
-  {
-    type: "collapse",
-    name: "Questionnaire",
-    key: "questionnaire",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/questionnaire",
-    component: <Questionnaire />,
-  },
-  {
-    type: "collapse",
-    name: "Questionnaire Grid",
-    key: "questionnairegrid",
-    icon: <Icon fontSize="small">uestionnaire</Icon>,
-    route: "/questionnairegrid",
-    component: <QuestionnaireGrid />,
-  },
   {
     type: "collapse",
     name: "Dashboard",
@@ -92,14 +65,6 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Notifications",
-    key: "notifications",
-    icon: <Icon fontSize="small">notifications</Icon>,
-    route: "/notifications",
-    component: <Notifications />,
-  },
-  {
-    type: "collapse",
     name: "Profile",
     key: "profile",
     icon: <Icon fontSize="small">person</Icon>,
@@ -108,19 +73,20 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Sign In",
-    key: "sign-in",
-    icon: <Icon fontSize="small">login</Icon>,
-    route: "/authentication/sign-in",
-    component: <SignIn />,
+    key: "home",
+    route: "/home",
+    component: <Landing />,
   },
   {
     type: "collapse",
-    name: "Sign Up",
-    key: "sign-up",
-    icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/authentication/sign-up",
-    component: <SignUp />,
+    key: "questionnaire",
+    route: "/questionnaire",
+  },
+  {
+    type: "collapse",
+    key: "questionnairegrid",
+    route: "/questionnairegrid",
+    component: <QuestionnaireGrid />,
   },
 ];
 
