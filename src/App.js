@@ -130,7 +130,7 @@ export default function App() {
     </MDBox>
   );
 
-  return true === false ? (
+  return true ? (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
       <CssBaseline />
       {layout === "dashboard" && (

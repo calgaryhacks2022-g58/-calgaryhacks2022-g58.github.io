@@ -19,7 +19,7 @@ function Content() {
               <button
                 type="button"
                 className="btn btn-dark start start-two"
-                onClick={console.log("test")}
+                onClick={}
               >
                 Get Started
               </button>
