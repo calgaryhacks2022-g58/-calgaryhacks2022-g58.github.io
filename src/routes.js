@@ -42,11 +42,11 @@ import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import Landing from "layouts/landingpage";
+import Questionnaire from "layouts/questionnaire";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
-
-import Index from "./layouts/landingpage/index";
 
 const routes = [
   {
@@ -55,7 +55,15 @@ const routes = [
     key: "home",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/home",
-    component: <Index />,
+    component: <Landing />,
+  },
+  {
+    type: "collapse",
+    name: "Questionnaire",
+    key: "questionnaire",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/questionnaire",
+    component: <Questionnaire />,
   },
   {
     type: "collapse",

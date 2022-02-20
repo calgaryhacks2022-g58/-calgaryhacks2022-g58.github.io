@@ -1,7 +1,5 @@
 import React from "react";
 
-function startButton() {}
-
 function Content() {
   return (
     <div>
@@ -18,9 +16,9 @@ function Content() {
             </h6>
             <br />
             <h6>
-              <button type="button" className="btn btn-dark start start-two" onClick={startButton}>
+              <a type="button" className="btn btn-dark start start-two" href="/questionnaire">
                 Get Started
-              </button>
+              </a>
             </h6>
           </div>
           <div className="col-sm-9 showcase-img">{/* <div className="circle"></div> */}</div>
