@@ -4,12 +4,13 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import MDTypography from "components/MDTypography";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -61,12 +62,13 @@ export default function Doctors() {
         sx={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           height: 50,
           m: 1,
           pl: 2,
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <MDTypography variant="h5">{images[activeStep].label}</MDTypography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
