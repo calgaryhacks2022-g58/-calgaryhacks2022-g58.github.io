@@ -8,10 +8,10 @@ import MDAvatar from "components/MDAvatar";
 import MDTypography from "components/MDTypography";
 
 import ChatDialog from "../ChatDialog";
-import { chat, goals } from "./testData";
+import { goals } from "./mock";
 import AchievedCheckbox from "../AchievedCheckbox";
 
-export default function data() {
+export default function data(chat) {
   const Goal = ({ image, goal, latestMsg }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDBox>
@@ -37,15 +37,26 @@ export default function data() {
     return `${sender}: ${latestMsg.content}`;
   };
   const rowEntries = [];
-  goals.forEach((goal) => {
-    rowEntries.push({
-      goals: (
-        <Goal image={goal.partnerImg} goal={goal.goal} latestMsg={GetLatestMessage(goal.chatid)} />
-      ),
-      chat: <ChatDialog id={parseInt(goal.chatid)} />,
-      achieved: <AchievedCheckbox achieved={goal.achived} />,
+  if (chat) {
+    goals.forEach((goal) => {
+      rowEntries.push({
+        goals: (
+          <Goal
+            image={goal.partnerImg}
+            goal={goal.goal}
+            latestMsg={GetLatestMessage(goal.chatid)}
+          />
+        ),
+        chat: (
+          <ChatDialog
+            chatMessages={chat[parseInt(goal.chatid)].messages}
+            chatId={parseInt(goal.chatid)}
+          />
+        ),
+        achieved: <AchievedCheckbox achieved={goal.achived} />,
+      });
     });
-  });
+  }
 
   return {
     columns: [

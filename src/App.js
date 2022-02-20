@@ -45,6 +45,8 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
+// eslint-disable-next-line no-unused-vars
+import firebaseApp from "utils/firestore";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
