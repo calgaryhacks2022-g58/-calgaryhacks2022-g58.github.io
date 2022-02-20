@@ -16,25 +16,25 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Albert Karlo",
-    Appointment: "Appointment: Friday, March 22nd 2022",
-    imgPath:
-      "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-  {
-    label: "Justin Choi",
-    Appointment: "No upcoming appointments at this time",
+    label: "Dr. Ralph J. Richards",
+    Appointment: "Upcoming Appointment: Tuesday, February 22 at 10:00AM",
     imgPath:
       "https://images.pexels.com/photos/2182979/pexels-photo-2182979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
-    label: "Bali Indonesia",
-    Appointment: "Appointment: Sunday, April 3rd 2022",
+    label: "Dr. Jaime L. Gutierrez",
+    Appointment: "No upcoming appointments at this time",
+    imgPath:
+      "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    label: "Dr. Bali Indonesia",
+    Appointment: "Upcoming Appointment: Wednesday, April 6 at 1:00 PM",
     imgPath:
       "https://media.istockphoto.com/photos/we-offer-our-patients-premium-healthcare-here-picture-id638647058?k=20&m=638647058&s=612x612&w=0&h=aRF56ZIBXBL1wN45ZRaHkhmjJjIahkmXTYki7wQteJQ=",
   },
   {
-    label: "Goč Serbia",
+    label: "Dr. Clara W. Valerio",
     Appointment: "No upcoming appointments at this time",
     imgPath:
       "https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=",
