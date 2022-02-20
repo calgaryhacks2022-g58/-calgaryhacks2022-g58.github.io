@@ -44,6 +44,7 @@ import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 import Landing from "layouts/landingpage";
 import Questionnaire from "layouts/questionnaire";
+import QuestionnaireGrid from "layouts/questionnairegrid";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -64,6 +65,14 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/questionnaire",
     component: <Questionnaire />,
+  },
+  {
+    type: "collapse",
+    name: "Questionnaire Grid",
+    key: "questionnairegrid",
+    icon: <Icon fontSize="small">uestionnaire</Icon>,
+    route: "/questionnairegrid",
+    component: <QuestionnaireGrid />,
   },
   {
     type: "collapse",
