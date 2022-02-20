@@ -5,18 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActions } from "@mui/material";
-<<<<<<< Updated upstream
-import Header from "../../components/Header/Header";
-
-function Questionnaire() {
-  return (
-    <div>
-      <Header />
-      <StepsProvider>
-        <MySteps />
-      </StepsProvider>
-    </div>
-=======
 import ButtonGroup from "@mui/material/ButtonGroup";
 
 // Material Dashboard 2 React components
@@ -40,7 +28,6 @@ function Questionnaire() {
     <StepsProvider>
       <MySteps />
     </StepsProvider>
->>>>>>> Stashed changes
   );
 }
 
