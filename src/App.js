@@ -39,8 +39,9 @@ import routes from "routes";
 import { useMaterialUIController, setMiniSidenav } from "context";
 
 // Images
-import brandWhite from "assets/images/logo-ct.png";
-import brandDark from "assets/images/logo-ct-dark.png";
+// import brandWhite from "assets/images/logo-ct.png";
+// import brandDark from "assets/images/logo-ct-dark.png";
+import brandLogo from "assets/images/medical.svg";
 // eslint-disable-next-line no-unused-vars
 import firebaseApp from "utils/firestore";
 
@@ -51,8 +52,8 @@ export default function App() {
     direction,
     layout,
     sidenavColor,
-    transparentSidenav,
-    whiteSidenav,
+    // transparentSidenav,
+    // whiteSidenav,
     darkMode,
   } = controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
@@ -108,7 +109,7 @@ export default function App() {
           pathname !== "/questionnaire" ? (
             <Sidenav
               color={sidenavColor}
-              brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
+              brand={brandLogo}
               brandName="Health Fluency"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
