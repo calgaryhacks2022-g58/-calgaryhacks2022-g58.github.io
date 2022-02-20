@@ -18,7 +18,7 @@ const goals = [
     chatid: "1",
   },
   {
-    goal: "Finish a find a new hobby",
+    goal: "Find a new hobby",
     achived: false,
     partnerName: "Emma",
     partnerImg: team3,
