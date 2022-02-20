@@ -6,17 +6,14 @@ function Content() {
       <div className="container content">
         <div className="row">
           <div className="col-sm-3 talk">
-            <h1>Get</h1>
-            <h1>Health Help</h1>
+            <h1>Get Health Help Now</h1>
             <br />
             <h6 className="bold-four">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nesciunt molestiae ex
-              inventore quibusdam id architecto quos cupiditate nobis magnam eum voluptatem quas
-              quis obcaecati dolor vero veritatis similique alias.
+              Get in contact with a doctor that understands your needs today.
             </h6>
             <br />
             <h6>
-              <a type="button" className="btn btn-dark start start-two" href="/questionnaire">
+              <a type="button" className="btn btn-dark start start-two" href="/questionnairegrid">
                 Get Started
               </a>
             </h6>
