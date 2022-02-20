@@ -46,7 +46,17 @@ import SignUp from "layouts/authentication/sign-up";
 // @mui icons
 import Icon from "@mui/material/Icon";
 
+import Index from "./layouts/landingpage/index";
+
 const routes = [
+  {
+    type: "collapse",
+    name: "Home",
+    key: "home",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/home",
+    component: <Index />,
+  },
   {
     type: "collapse",
     name: "Dashboard",

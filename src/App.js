@@ -46,8 +46,6 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
 
-import Index from "./layouts/landingpage/index";
-
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
   const {
@@ -130,7 +128,7 @@ export default function App() {
     </MDBox>
   );
 
-  return true ? (
+  return (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
       <CssBaseline />
       {layout === "dashboard" && (
@@ -150,10 +148,8 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/dashboard" />} />
+        <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </ThemeProvider>
-  ) : (
-    <Index />
   );
 }
