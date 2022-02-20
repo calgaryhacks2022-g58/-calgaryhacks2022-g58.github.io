@@ -20,6 +20,6 @@ export default {
   },
   tasks: {
     labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: { label: "Desktop apps", data: [50, 40, 60, 77, 100, 111, 112, 130, 133] },
+    datasets: { label: "Task count", data: [50, 40, 60, 77, 100, 111, 112, 130, 133] },
   },
 };
