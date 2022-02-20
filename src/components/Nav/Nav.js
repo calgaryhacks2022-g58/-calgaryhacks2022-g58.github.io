@@ -24,13 +24,8 @@ function Nav() {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <a className="nav-link" href="/">
-                Why Us
+                Why Health Fluency?
                 <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Support
               </a>
             </li>
           </ul>
