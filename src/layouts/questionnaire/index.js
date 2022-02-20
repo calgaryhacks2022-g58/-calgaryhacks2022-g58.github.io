@@ -11,7 +11,7 @@ function Questionnaire() {
 }
 
 function MySteps() {
-  const { next, prev } = useSteps();
+  const { next, prev, total, current, progress } = useSteps();
 
   return (
     <DashboardLayout>
@@ -33,6 +33,11 @@ function MySteps() {
         <button type="button" onClick={next}>
           Next
         </button>
+      </div>
+      <div className="steps_data">
+        <div>Total Steps: {total}</div>
+        <div>Current Step: {current}</div>
+        <div>Progress: {progress * 100}%</div>
       </div>
     </DashboardLayout>
   );
