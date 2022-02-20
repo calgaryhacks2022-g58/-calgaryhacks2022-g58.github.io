@@ -16,25 +16,29 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "Dr. Ralph J. Richards",
+    label: "Dr. Ralph Richards",
+    type: "Psychiatrist",
     Appointment: "Upcoming Appointment: Tuesday, February 22 at 10:00AM",
     imgPath:
       "https://images.pexels.com/photos/2182979/pexels-photo-2182979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     label: "Dr. Jaime L. Gutierrez",
+    type: "Dermatologist",
     Appointment: "No upcoming appointments at this time",
     imgPath:
       "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     label: "Dr. Bali Indonesia",
+    type: "Family Doctor",
     Appointment: "Upcoming Appointment: Wednesday, April 6 at 1:00 PM",
     imgPath:
       "https://media.istockphoto.com/photos/we-offer-our-patients-premium-healthcare-here-picture-id638647058?k=20&m=638647058&s=612x612&w=0&h=aRF56ZIBXBL1wN45ZRaHkhmjJjIahkmXTYki7wQteJQ=",
   },
   {
     label: "Dr. Clara W. Valerio",
+    type: "Cardiologist",
     Appointment: "No upcoming appointments at this time",
     imgPath:
       "https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=",
@@ -92,6 +96,8 @@ export default function Doctors() {
                   overflow: "hidden",
                   width: "100%",
                   mx: "auto",
+                  boxShadow: 2,
+                  borderRadius: 8,
                 }}
                 src={step.imgPath}
                 alt={step.label}
@@ -101,6 +107,9 @@ export default function Doctors() {
         ))}
       </AutoPlaySwipeableViews>
       <MDTypography sx={{ m: "10px", mx: "auto" }} variant="h6">
+        {images[activeStep].type}
+      </MDTypography>
+      <MDTypography sx={{ m: "8px", mx: "auto" }} variant="h6">
         {images[activeStep].Appointment}
       </MDTypography>
       <MobileStepper
