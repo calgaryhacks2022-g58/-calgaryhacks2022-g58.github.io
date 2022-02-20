@@ -6,7 +6,7 @@ import data from "layouts/dashboard/components/AccountabilityChecklist/data";
 import DataTable from "examples/Tables/DataTable";
 import MDTypography from "components/MDTypography";
 import { db } from "utils/firestore";
-import { collection, orderBy, query } from "firebase/firestore";
+import { collection, query } from "firebase/firestore";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function AccountabilityChecklist() {
