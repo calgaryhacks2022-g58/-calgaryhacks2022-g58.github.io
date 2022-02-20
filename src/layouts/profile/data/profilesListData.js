@@ -24,7 +24,7 @@ export default [
   {
     image: kal,
     name: "Sophie B.",
-    description: "Hi! I need more information..",
+    description: "Hi!",
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
@@ -68,7 +68,7 @@ export default [
   {
     image: team3,
     name: "Nick Daniel",
-    description: "Hi! I need more information..",
+    description: "Hi!",
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
