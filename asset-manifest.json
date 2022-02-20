@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.f8052de8.js",
+    "main.js": "/static/js/main.0a35c0e0.js",
     "static/media/bg-profile.jpeg": "/static/media/bg-profile.af1219a742e09fc7b612.jpeg",
     "static/media/team-1.jpg": "/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
     "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
@@ -9,12 +9,11 @@
     "static/media/team-3.jpg": "/static/media/team-3.0ef0be95e6850814c79e.jpg",
     "static/media/ivana-square.jpg": "/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
     "static/media/kal-visuals-square.jpg": "/static/media/kal-visuals-square.3210e28a48ff572ae88b.jpg",
-    "static/media/team-4.jpg": "/static/media/team-4.85c82b6e60178804017f.jpg",
     "static/media/medical.svg": "/static/media/medical.a714245d251bd10cf50c67eaa4e6a77f.svg",
     "index.html": "/index.html",
-    "main.f8052de8.js.map": "/static/js/main.f8052de8.js.map"
+    "main.0a35c0e0.js.map": "/static/js/main.0a35c0e0.js.map"
   },
   "entrypoints": [
-    "static/js/main.f8052de8.js"
+    "static/js/main.0a35c0e0.js"
   ]
 }
