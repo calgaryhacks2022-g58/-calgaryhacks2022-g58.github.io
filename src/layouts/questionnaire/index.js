@@ -1,19 +1,20 @@
 import { Steps, StepsProvider, useSteps } from "react-step-builder";
 // Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActions } from "@mui/material";
+import Header from "../../components/Header/Header";
 
 function Questionnaire() {
   return (
-    <DashboardLayout>
+    <div>
+      <Header />
       <StepsProvider>
         <MySteps />
       </StepsProvider>
-    </DashboardLayout>
+    </div>
   );
 }
 

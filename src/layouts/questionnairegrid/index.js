@@ -12,11 +12,12 @@ import CardMedia from "@mui/material/CardMedia";
 import MDBox from "components/MDBox";
 
 // Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import Header from "../../components/Header/Header";
 
 function QuestionnaireGrid() {
   return (
-    <DashboardLayout>
+    <div>
+      <Header />
       <Grid item xs={12} md={12} lg={12}>
         <MDBox>
           <Card variant="outlined">
@@ -247,7 +248,7 @@ function QuestionnaireGrid() {
           </Grid>
         </MDBox>
       </Grid>
-    </DashboardLayout>
+    </div>
   );
 }
 
