@@ -36,6 +36,7 @@ export default function data(chat) {
       chat[i].members[latestMsg.sender] === "Bob" ? "You" : chat[i].members[latestMsg.sender];
     return `${sender}: ${latestMsg.content}`;
   };
+
   const rowEntries = [];
   if (chat) {
     goals.forEach((goal) => {

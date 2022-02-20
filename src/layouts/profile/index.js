@@ -1,3 +1,5 @@
+/* eslint-disable radix */
+/* eslint-disable no-param-reassign */
 /**
 =========================================================
 * Material Dashboard 2 React - v2.1.0
@@ -25,7 +27,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
-import ProfilesList from "examples/Lists/ProfilesList";
+import ConversationLists from "layouts/profile/components/ConversationLists";
 
 // Overview page components
 import Header from "layouts/profile/components/Header";
@@ -33,7 +35,25 @@ import Header from "layouts/profile/components/Header";
 // Data
 import profilesListData from "layouts/profile/data/profilesListData";
 
+// Firebase
+import { db } from "utils/firestore";
+import { collection, query } from "firebase/firestore";
+import { useCollectionData } from "react-firebase-hooks/firestore";
+
 function Overview() {
+  const messageRef = collection(db, "Chat");
+  const queryMsg = query(messageRef);
+  const [messages] = useCollectionData(queryMsg);
+
+  let conversations = [];
+  if (messages) {
+    conversations = [...profilesListData];
+    conversations.forEach((record) => {
+      record.messages = messages[record.chatId].messages;
+      record.description = record.messages[record.messages.length - 1].content;
+    });
+  }
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -59,7 +79,7 @@ function Overview() {
               <Divider orientation="vertical" sx={{ mx: 0 }} />
             </Grid>
             <Grid item xs={12} xl={6}>
-              <ProfilesList title="conversations" profiles={profilesListData} shadow={false} />
+              <ConversationLists title="conversations" profiles={conversations} shadow={false} />
             </Grid>
           </Grid>
         </MDBox>
