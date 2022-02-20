@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.9b3cde4f.js",
+    "main.js": "/static/js/main.a60abff5.js",
     "static/media/home-decor-3.jpg": "/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
     "static/media/home-decor-2.jpg": "/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
     "static/media/home-decor-1.jpg": "/static/media/home-decor-1.05e218fd495ccc65c99d.jpg",
-    "static/media/bg-sign-in-basic.jpeg": "/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
     "static/media/bg-profile.jpeg": "/static/media/bg-profile.af1219a742e09fc7b612.jpeg",
-    "static/media/bg-sign-up-cover.jpeg": "/static/media/bg-sign-up-cover.30c5950b22e74f0d82ba.jpeg",
     "static/media/home-decor-4.jpeg": "/static/media/home-decor-4.5b448fd339a14695f6aa.jpeg",
     "static/media/team-1.jpg": "/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
     "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
@@ -17,9 +15,9 @@
     "static/media/kal-visuals-square.jpg": "/static/media/kal-visuals-square.3210e28a48ff572ae88b.jpg",
     "static/media/team-4.jpg": "/static/media/team-4.85c82b6e60178804017f.jpg",
     "index.html": "/index.html",
-    "main.9b3cde4f.js.map": "/static/js/main.9b3cde4f.js.map"
+    "main.a60abff5.js.map": "/static/js/main.a60abff5.js.map"
   },
   "entrypoints": [
-    "static/js/main.9b3cde4f.js"
+    "static/js/main.a60abff5.js"
   ]
 }
