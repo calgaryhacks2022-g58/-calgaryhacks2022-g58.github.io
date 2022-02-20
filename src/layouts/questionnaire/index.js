@@ -1,12 +1,19 @@
 import { Steps, StepsProvider, useSteps } from "react-step-builder";
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { Button, CardActions } from "@mui/material";
 
 function Questionnaire() {
   return (
-    <StepsProvider>
-      <MySteps />
-    </StepsProvider>
+    <DashboardLayout>
+      <StepsProvider>
+        <MySteps />
+      </StepsProvider>
+    </DashboardLayout>
   );
 }
 
@@ -14,32 +21,74 @@ function MySteps() {
   const { next, prev, total, current, progress } = useSteps();
 
   return (
-    <DashboardLayout>
+    <Card>
       <Steps>
         <div>
-          <h1>Step 1</h1>
+          <CardMedia
+            component="img"
+            height="140"
+            image="/images/grid_images/undraw_information_tab_re_f0w3.svg"
+            alt="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizard
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+              across all continents except Antarctica
+            </Typography>
+          </CardContent>
         </div>
         <div>
-          <h1>Step 2</h1>
+          <CardMedia
+            component="img"
+            height="140"
+            image="/images/grid_images/undraw_information_tab_re_f0w3.svg"
+            alt="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizard
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+              across all continents except Antarctica
+            </Typography>
+          </CardContent>
         </div>
         <div>
-          <h1>Step 3</h1>
+          <CardMedia
+            component="img"
+            height="140"
+            image="/images/grid_images/undraw_information_tab_re_f0w3.svg"
+            alt="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizard
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+              across all continents except Antarctica
+            </Typography>
+          </CardContent>
         </div>
       </Steps>
-      <div className="navigation">
-        <button type="button" onClick={prev}>
+      <CardActions>
+        <Button variant="contained" type="button" onClick={prev}>
           Prev
-        </button>
-        <button type="button" onClick={next}>
+        </Button>
+        <Button variant="contained" type="button" onClick={next}>
           Next
-        </button>
-      </div>
+        </Button>
+      </CardActions>
       <div className="steps_data">
         <div>Total Steps: {total}</div>
         <div>Current Step: {current}</div>
         <div>Progress: {progress * 100}%</div>
       </div>
-    </DashboardLayout>
+    </Card>
   );
 }
 
